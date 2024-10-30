@@ -1,0 +1,8 @@
+Nombre,Cantidad
+Termoelectrica,158473760
+Hidroelectrica,32320461
+Carboelectrica,14136090
+Nucleoelectrica,9662387
+Geotermolectrica,4173456
+Eolica,1603355
+Fotovoltaica,6738
