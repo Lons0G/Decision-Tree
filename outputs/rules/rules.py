@@ -9,7 +9,19 @@ def findDecision(obj): #obj[0]: 0, obj[1]: 1, obj[2]: 2, obj[3]: 3, obj[4]: 4, o
             if obj[5]>-3.511878193549121:
                # {"feature": 3, "instances": 394, "metric_value": 0.9854, "depth": 5}
                if obj[3]<=4.240777195860392:
-                  return 'B'
+                  # {"feature": 4, "instances": 389, "metric_value": 0.9876, "depth": 6}
+                  if obj[4]>-4.728170550062225:
+                     # {"feature": 6, "instances": 388, "metric_value": 0.988, "depth": 7}
+                     if obj[6]>-2.448851088894449:
+                        return 'B'
+                     elif obj[6]<=-2.448851088894449:
+                        return 'M'
+                     else:
+                        return 'B'
+                  elif obj[4]<=-4.728170550062225:
+                     return 'B'
+                  else:
+                     return 'B'
                elif obj[3]>4.240777195860392:
                   return 'B'
                else:
